@@ -1,6 +1,7 @@
 
-<router-outlet>
-  <app-header-container />
-  <app-aside />
-  <app-footer />
+<router-outlet class="row">
+  <header class="col-12"><app-header-container /></header>
+  <main class="col-8"><app-home/></main>
+  <aside class="col-4"><app-aside /></aside>
+  <footer class="col-12"><app-footer /></footer>
 </router-outlet>

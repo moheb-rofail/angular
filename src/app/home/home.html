@@ -1,1 +1,20 @@
-<p>home works!</p>
+<ul>
+@for(country of peopleByCountry; track country) {
+    @switch (country.country) {
+        @case ("US") {
+            <li class="text-primary">{{ country.country }}
+        } @case ("UK") {
+            <li class="text-secondary">{{ country.country }}
+        } @case ("MARS") {
+            <li class="text-success">{{ country.country }}
+        } @default {
+            <li class="text-info">{{ country.country }}
+        }
+    }
+    <ul>
+        @for(person of country.people; track person) {
+            <li>{{person.name}}</li>
+        }
+    </ul>
+}
+</ul>

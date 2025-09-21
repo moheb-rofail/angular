@@ -7,5 +7,33 @@ import { Component } from '@angular/core';
   styleUrl: './home.css'
 })
 export class Home {
-
+  peopleByCountry: any[] = [{
+    'country': 'UK',
+    'people': [
+      { "name": "Douglas Pace" },
+      { "name": "Mcleod Mueller"},
+      ]
+  },
+  {
+    'country': 'US',
+    'people': [
+      { "name": "Day Meyers" },
+      { "name": "Aguirre Ellis" },
+      {"name": "Cook Tyson" }
+      ]
+  },
+  {
+    'country': 'MARS',
+    'people': [
+      { "name": "Douglas Pace" },
+      { "name": "Mcleod Mueller" },
+      ]
+  }];
+/*
+  classes = {
+    'UK': 'red',
+    'US' : 'green',
+    'MARS' : 'yellow'
+  }
+    */
 }
