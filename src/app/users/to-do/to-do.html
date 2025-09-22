@@ -1,0 +1,15 @@
+<input type="text" #task />
+<button (click)="addTask(task.value); task.value=''">Add Task</button>
+<br>
+<table>
+    <tr>
+        <th>Tasks</th>
+        <th>Action</th>
+    </tr>
+@for(task of tasks; track $index) {
+    <tr>
+        <td>{{ task }}</td>
+        <td><button class="btn" (click)="deleteTask($index)">Delete</button></td>
+    </tr>
+}
+</table>

@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { PeopleList } from '../users/people-list/people-list';
+import { ToDo } from '../users/to-do/to-do';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [PeopleList, ToDo],
   templateUrl: './home.html',
   styleUrl: './home.css'
 })
